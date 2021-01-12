@@ -29,6 +29,8 @@ gem 'faker'
 gem 'autoprefixer-rails'
 gem 'font-awesome-sass'
 gem 'simple_form'
+gem 'rest-client'
+gem 'dotenv-rails'
 
 
 # Reduces boot times through caching; required in config/boot.rb
