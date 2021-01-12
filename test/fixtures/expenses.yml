@@ -1,0 +1,27 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  description: MyString
+  category: one
+  expense_date: 2021-01-13 00:58:55
+  reimbursement: false
+  account: one
+  report: one
+  user: one
+  project: one
+  fapiao: false
+  approved: false
+  amount: 1.5
+
+two:
+  description: MyString
+  category: two
+  expense_date: 2021-01-13 00:58:55
+  reimbursement: false
+  account: two
+  report: two
+  user: two
+  project: two
+  fapiao: false
+  approved: false
+  amount: 1.5
