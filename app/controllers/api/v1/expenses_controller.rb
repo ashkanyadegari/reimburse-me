@@ -3,11 +3,12 @@ class Api::V1::ExpensesController < Api::V1::BaseController
   skip_before_action :verify_authenticity_token, only: [:create, :update, :destroy]
 
   def index
-    @users = Expense.all
-    render json: @users #Just for testing
+    @expenses = Expense.where(user_id: params["user_id"])
+    render json: @expenses #Just for testing
   end
 
   def show
+    render json: @expense
   end
 
   def create

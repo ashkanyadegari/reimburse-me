@@ -1,10 +1,14 @@
 class Api::V1::ProjectsController < Api::V1::BaseController
   before_action :set_project, only: [:show, :update]
+  skip_before_action :verify_authenticity_token, only: [:index, :create, :update, :destroy]
 
   def index
+    @projects = User.find(params["user_id"]).projects
+    render json: @projects
   end
 
   def show
+    render json: @project
   end
 
   def create
