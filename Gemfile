@@ -31,6 +31,8 @@ gem 'font-awesome-sass'
 gem 'simple_form'
 gem 'rest-client'
 gem 'dotenv-rails'
+gem 'activestorage-aliyun'
+gem 'image_processing'
 
 
 # Reduces boot times through caching; required in config/boot.rb

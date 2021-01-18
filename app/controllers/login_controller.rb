@@ -23,7 +23,8 @@ class LoginController < ApplicationController
       @user = User.create(
         email: open_id + '@askjerry.cn',
         password: '123456',
-        open_id: open_id
+        open_id: open_id,
+        company_id: 1
       )
     end
     render json: {
