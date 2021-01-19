@@ -13,6 +13,7 @@ Rails.application.routes.draw do
 
       # expense resources
       resources :expenses
+      post "/fapiao", to: "expenses#fapiao_upload"
 
       # project resources
       resources :projects

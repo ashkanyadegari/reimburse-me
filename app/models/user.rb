@@ -5,6 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
   belongs_to :company, optional: true
   has_many :project_joins
+  has_many :expenses
   has_many :projects, through: :project_joins
   has_many :reports, dependent: :destroy
 end
