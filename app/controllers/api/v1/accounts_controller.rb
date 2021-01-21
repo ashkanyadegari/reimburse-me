@@ -1,3 +1,3 @@
-class Api::V1::CategoriesController < Api::V1::BaseController
+class Api::V1::AccountsController < Api::V1::BaseController
 
 end
